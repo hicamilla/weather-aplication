@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -28,11 +29,18 @@
 
     <main>
      <div class="weather-app-data">
-         <p class="weather-app-details">
+            <div class="weather-app-temperature-container">
+                <p>
+                <div id="icon"> 🌧️ </div>
+                <div class="weather-temperature" id="temperature"> 6°</div>
+                <div class="feels-like"> Feels Like:
+                <strong id="feels-like"> -3°</strong></div>
+                </p>
+            </div>
+        
+        
+        <p class="weather-app-details">
             <strong id="day-week">Wednesday</strong> with <strong class="description"> clear sky</strong>
-            <br />
-            Feels Like: 
-            <strong id="feels-like"> -3°</strong>
             <br />
             Humidity:
             <strong id="humidity">13%</strong>
@@ -45,12 +53,7 @@
          </p>
        
 
-        <div class="weather-app-temperature-container">
-        <p>
-            <div id="icon"> 🌧️ </div>
-            <div class="weather-temperature" id="temperature"> 6°</div> 
-        </p>  
-        </div>
+    
      </div>
         <div class="weather-forecast">
             <div class="row">

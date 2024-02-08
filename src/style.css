@@ -66,12 +66,19 @@ main{
 .weather-app-details{
     font-size: 17px;
     line-height: 33px;
-    padding-left: 30px;
+    padding-right: 40px;
+    padding-top:90px;
 }
 
 .weather-app-temperature-container{
-    padding-right: 100px;
+    padding-left: 100px;
+    text-align: center;
 /* for display de img + temperature in horizontal display: flex;*/
+}
+
+#icon {
+    font-size: 80px;
+    margin-top: 22px;
 }
 
 .weather-temperature{
@@ -79,9 +86,8 @@ main{
     font-weight: 600;
 }
 
-#icon{
-    font-size:80px;
-    margin-top:22px;
+.feels-like{
+    font-size:15px;
 }
 
 /*footer*/
