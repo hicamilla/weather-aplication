@@ -33,7 +33,6 @@ header {
     font-weight: 700;
 }
 
-
 /* form */
 .search-form-input{
     background: #5c8ac283;
@@ -54,7 +53,36 @@ header {
     padding: 17px 30px;
 }
 
+/* weather */
+main{
+    padding:25px 0;
+}
 
+.weather-app-data{
+    display:flex;
+    justify-content: space-between;
+} 
+
+.weather-app-details{
+    font-size: 17px;
+    line-height: 33px;
+    padding-left: 30px;
+}
+
+.weather-app-temperature-container{
+    padding-right: 100px;
+/* for display de img + temperature in horizontal display: flex;*/
+}
+
+.weather-temperature{
+    font-size: 80px;
+    font-weight: 600;
+}
+
+#icon{
+    font-size:80px;
+    margin-top:22px;
+}
 
 /*footer*/
 footer {
