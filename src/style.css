@@ -3,8 +3,7 @@ body{
     font-family: 'Poppins', sans-serif;
     background: #525252;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3d72b4, #525252);
-    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #3d72b4, #525252);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #3d72b4, #525252);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */}
 
@@ -17,20 +16,60 @@ body{
     padding: 30px;
 }
 
+/* header */
+header {
+    border-bottom: 1.5px solid #7591b391;
+    padding: 0 0 30px 0;
+}
+
+.weather-place{
+    font-size: 54px;
+    line-height: 58px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+#city{
+    font-weight: 700;
+}
 
 
 /* form */
+.search-form-input{
+    background: #5c8ac283;
+    font-size: 15px;
+    border:none;
+    border-radius: 6px;
+    width: 80%;
+    padding: 15px 20px;
+    margin-left: 07px;
+}
 
+.search-form-button{
+    background:#626262bf;
+    color: white;
+    font-size: 15px;
+    border:none;
+    border-radius:5px;
+    padding: 17px 30px;
+}
 
 
 
 /*footer*/
+footer {
+    border-top: 1.5px solid #7591b391;
+    padding: 35px 0 0px 0;
+}
+
 .last-update{
-    font-size: 13px;
+    font-size: 12px;
     text-align: center;
+    padding: 0 0 20px 0; 
 }
 
 .about{
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
+    
 }
