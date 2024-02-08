@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="weather-project">
+    <header>
+    <h1 class="weather-place"> Weather in 
+        <br />
+        <span class="city"> Düsseldorf </span></h1>
+
+    <form class="search-form" id="search-form">
+        <input type="search" placeholder="Enter the city" required class="search-form-input" id="search-form-input"/>
+        <input type="submit" value="Search" class="search-form-button"/>
+    </form>
+
+    </header>
+
+    <main>
+        <div class="weather-app-data">
+        <p class="weather-app-details">
+            <span id="day-week">Wednesday</span> with <span class="description"> clear sky</span>
+            <br />
+            Feels Like: 
+            <strong id="feels-like"> -3°</strong>
+            <br />
+            Humidity:
+            <strong id="humidity">13%</strong>
+            <br />
+            Wind:
+            <strong id="wind">14km/h</strong>
+        </p>
+        </div>
+
+        <div class="weather-app-temperature-container">
+        <p>
+            <div id="icon"> 🌧️</div>
+            <div class="weather-temperature" id="temperature"> 6</div> 
+            <div class="weather-unit"> °C</div>
+        </p>
+        </div>
+        <div class="weather-forecast">
+            <div class="row">
+                <div class="col-2"> 
+                    <div class="weather-forecast-date">
+                    Thu 
+                    </div>
+                    <img src="https://ssl.gstatic.com/onebox/weather/64/rain_light.png" alt="" width="30px"/>
+                    <div class="weather-forecast-temperature">
+                        <span class="weather-forecast-max"> 10°</span>
+                        <span class="weather-forecast-min"> 7°</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p class="last-update"> Last update at 12:30 </p>
+        <p class="about">
+         This project is coded by
+         <a href="https://www.instagram.com/skinnyc" target="_blank">Camilla Cardoso</a>,
+         is open-sourced on 
+         <a href="https://linkedin.com/camillascardoso" target="_blank">GitHub</a>
+         and is hosted on <a href="https://theamazingweatherapp.netlify.app/" target"_blank">Netlify</a>.
+        </p>
+
+    </footer>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+</html>
