@@ -6,21 +6,23 @@ function refreshWeather(response) {
     let descriptionElement = document.querySelector("#description");
     let humidityElement = document.querySelector("#humidity");
     let windElement = document.querySelector("#wind");
-    let timeElement = document.getElementById("time");
-    let date = new Date(response.data.time * 1000);
     let iconElement = document.querySelector("#icon");
+    let weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let d = new Date();
+    let day = weekday[d.getDay()];
 
- 
     console.log(response.data);
 
-    iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-temperature-icon"></img>`;
     cityElement.innerHTML = response.data.city;
-    timeElement.innerHTML = `${date.getHours()}:${date.getMinutes()}`;
+    document.getElementById("weekday").innerHTML = day;
     temperatureElement.innerHTML = Math.round(temperature);
     feels_likeElement.innerHTML = Math.round(response.data.temperature.feels_like) + "°";
     descriptionElement.innerHTML = response.data.condition.description;
     humidityElement.innerHTML = response.data.temperature.humidity + "%";
     windElement.innerHTML = response.data.wind.speed + "km/h";
+    iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-temperature-icon"></img>`;
+
+    getForecast("respose.data.city");
 }
 
 function searchCity(city) {
@@ -36,7 +38,21 @@ function handleSearchSubmit(event) {
     searchCity(searchInput.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+    let apiKey = "b2a5adcct04b33178913oc335f405433";
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+    
+    axios(apiUrl).then(displayForecast);
+
+    console.log(apiUrl);
+}
+
+
+function displayForecast(response) {
+    console.log(response.data);
+
+
+
     let forecast = document.querySelector("#forecast");
     let days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
     let forecastHtml = " ";
@@ -66,5 +82,4 @@ let searchformElement = document.querySelector("#search-form");
 searchformElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Oslo");
-displayForecast();
 
