@@ -55,7 +55,7 @@ header {
 
 /* weather */
 main{
-    padding:25px 0;
+    padding:25px 13px;
 }
 
 .weather-app-data{
@@ -66,22 +66,23 @@ main{
 .weather-app-details{
     font-size: 17px;
     line-height: 33px;
-    padding-right: 40px;
-    padding-top:100px;
+    padding-left: 30px;
+    padding-top: 140px;
 }
 
 .weather-app-temperature-container{
-    padding-left: 70px;
+    padding-right: 70px;
     text-align: center;
 /* for display de img + temperature in horizontal display: flex;*/
 }
 
-#icon {
-    margin-top: 12px;
+.icon {
+    margin-top: 50px;
+    margin-bottom: -20px;
 }
 
 .weather-temperature{
-    font-size: 80px;
+    font-size: 90px;
     font-weight: 600;
     margin-top: -15px;
 }
@@ -92,11 +93,9 @@ main{
 
 /*forecast*/
 .weather-forecast{
-    padding-top: 70px;
+    padding-top: 80px;
     margin-left: 45px;
     margin-bottom: 20px;
-    
-    
 }
 
 /*footer*/
