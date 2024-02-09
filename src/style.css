@@ -55,7 +55,7 @@ header {
 
 /* weather */
 main{
-    padding:25px 13px;
+    padding:25px 10px;
 }
 
 .weather-app-data{
@@ -81,10 +81,21 @@ main{
     margin-bottom: -20px;
 }
 
+.temp-unit{
+    display: flex;
+    justify-content: center;
+
+}
+
 .weather-temperature{
     font-size: 90px;
     font-weight: 600;
-    margin-top: -15px;
+    margin-top: -10px;
+}
+
+.weather-unit{
+    font-size: 40px;
+    padding-top: 10px;
 }
 
 .feels-like{
@@ -93,9 +104,33 @@ main{
 
 /*forecast*/
 .weather-forecast{
-    padding-top: 80px;
-    margin-left: 45px;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.weather-forecast-date{
+    text-align: center;
+    color:#525252;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.weather-forecast-icon{
+    font-size: 35px;
+    text-align: center;
+}
+
+.weather-forecast-temperatures{
+    text-align: center;
+    color: #3d72b4;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.weather.weather-forecast-temperature{
+    padding: 0 10px;
 }
 
 /*footer*/
