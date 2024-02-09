@@ -6,19 +6,22 @@ function refreshWeather(response) {
     let descriptionElement = document.querySelector("#description");
     let humidityElement = document.querySelector("#humidity");
     let windElement = document.querySelector("#wind");
+    let timeElement = document.getElementById("time");
+    let date = new Date(response.data.time * 1000);
+    let iconElement = document.querySelector("#icon");
 
+ 
+    console.log(response.data);
 
+    iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-temperature-icon"></img>`;
     cityElement.innerHTML = response.data.city;
+    timeElement.innerHTML = `${date.getHours()}:${date.getMinutes()}`;
     temperatureElement.innerHTML = Math.round(temperature) + "°";
     feels_likeElement.innerHTML = Math.round(response.data.temperature.feels_like) + "°";
     descriptionElement.innerHTML = response.data.condition.description;
     humidityElement.innerHTML = response.data.temperature.humidity + "%";
     windElement.innerHTML = response.data.wind.speed + "km/h";
-
 }
-
-
-
 
 
 function searchCity(city) {

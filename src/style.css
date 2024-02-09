@@ -41,7 +41,7 @@ header {
     border-radius: 6px;
     width: 80%;
     padding: 15px 20px;
-    margin-left: 07px;
+    margin-left: 13px;
 }
 
 .search-form-button{
@@ -67,27 +67,36 @@ main{
     font-size: 17px;
     line-height: 33px;
     padding-right: 40px;
-    padding-top:90px;
+    padding-top:100px;
 }
 
 .weather-app-temperature-container{
-    padding-left: 100px;
+    padding-left: 70px;
     text-align: center;
 /* for display de img + temperature in horizontal display: flex;*/
 }
 
 #icon {
-    font-size: 80px;
-    margin-top: 22px;
+    margin-top: 12px;
 }
 
 .weather-temperature{
     font-size: 80px;
     font-weight: 600;
+    margin-top: -15px;
 }
 
 .feels-like{
     font-size:15px;
+}
+
+/*forecast*/
+.weather-forecast{
+    padding-top: 70px;
+    margin-left: 45px;
+    margin-bottom: 20px;
+    
+    
 }
 
 /*footer*/
