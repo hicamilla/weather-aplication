@@ -129,8 +129,8 @@ main{
     justify-content: center;
 }
 
-.weather.weather-forecast-temperature{
-    padding: 0 10px;
+.weather-forecast-max{
+    padding-right: 10px;
 }
 
 /*footer*/
@@ -142,11 +142,10 @@ footer {
 .last-update{
     font-size: 12px;
     text-align: center;
-    padding: 0 0 20px 0; 
+    padding: 0 0 20px 15px; 
 }
 
 .about{
     font-size: 13px;
     text-align: center;
-    
 }
